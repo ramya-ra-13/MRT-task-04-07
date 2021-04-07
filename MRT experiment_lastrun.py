@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.5),
-    on Tue Mar  9 23:51:56 2021
+    on Wed Apr  7 16:44:05 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -97,6 +97,7 @@ spac = visual.TextStim(win=win, name='spac',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
+win.mouseVisible = False
 
 # Initialize components for Routine "Instrux"
 InstruxClock = core.Clock()
@@ -153,7 +154,7 @@ spac3 = visual.TextStim(win=win, name='spac3',
 # Initialize components for Routine "VisualInstrux2"
 VisualInstrux2Clock = core.Clock()
 headerm = visual.TextStim(win=win, name='headerm',
-    text='These two objects are mirror images of eachother. They can never be rotated to appear exactly alike. \nIn this example, you will press “m”.',
+    text='These two objects are mirror images of each other. They can never be rotated to appear exactly alike. \nIn this example, you will press “m”.',
     font='Times New Roman',
     pos=(0, 0.25), height=0.06, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -187,7 +188,7 @@ spac4 = visual.TextStim(win=win, name='spac4',
 # Initialize components for Routine "Practice"
 PracticeClock = core.Clock()
 practice = visual.TextStim(win=win, name='practice',
-    text='Let’s do some practice. \n\nPress “x” if the two objects are the same. \nPress “m” if the two objects are mirror images (ie. the images cannot be superimposed on eachother).\n\n',
+    text='Let’s do some practice. \n\nPress “x” if the two objects are the same. \nPress “m” if the two objects are mirror images (ie. the images cannot be superimposed on each other).\n\n',
     font='Times New Roman',
     pos=(0, 0), height=0.06, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -283,7 +284,7 @@ text3 = visual.TextStim(win=win, name='text3',
     depth=0.0);
 key_resp_5 = keyboard.Keyboard()
 text_5 = visual.TextStim(win=win, name='text_5',
-    text='Press the spacebar when you are told to start the experiment.',
+    text='Press the spacebar when you are ready to start the experiment.',
     font='Times New Roman',
     pos=(0, -0.4), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -899,6 +900,7 @@ for thisPracticeList in PracticeList:
     continueRoutine = True
     routineTimer.add(1.000000)
     # update component parameters for each repeat
+    win.mouseVisible = False
     # keep track of which components have finished
     fixationComponents = [fixa]
     for thisComponent in fixationComponents:
@@ -972,6 +974,7 @@ for thisPracticeList in PracticeList:
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
+    win.mouseVisible = False
     # keep track of which components have finished
     StimDisplayComponents = [image_3, image_4, key_resp]
     for thisComponent in StimDisplayComponents:
@@ -1348,6 +1351,7 @@ for thisTrialList1 in TrialList1:
     continueRoutine = True
     routineTimer.add(1.000000)
     # update component parameters for each repeat
+    win.mouseVisible = False
     # keep track of which components have finished
     fixationComponents = [fixa]
     for thisComponent in fixationComponents:
